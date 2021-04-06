@@ -2,7 +2,8 @@ export SOURCE_FOLDER=~/workspace/paquita/SteamingApp/streaming-server
 export PROJECT_FOLDER=~/workspace/paquita/SteamingAppDocs
 
 cd $SOURCE_FOLDER
-echo working on project: $pwd
+echo working on project:
+pwd
 echo generating docs.
 ./gradlew asciidoctor
 cp -f build/docs/asciidoc/* $PROJECT_FOLDER
