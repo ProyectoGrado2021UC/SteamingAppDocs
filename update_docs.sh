@@ -6,7 +6,7 @@ echo working on project:
 pwd
 echo generating docs.
 ./gradlew asciidoctor
-cp -f build/docs/asciidoc/* $PROJECT_FOLDER
+cp -rpf build/docs/asciidoc/* $PROJECT_FOLDER
 cd $PROJECT_FOLDER
 echo working on project: $pwd
 git add .
